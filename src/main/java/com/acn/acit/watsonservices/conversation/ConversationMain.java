@@ -53,11 +53,13 @@ public class ConversationMain {
 					XpathSelAttribute = 1;
 					XpathFunction = 0;
 					
-				}else if (XpathSelAttribute.equals(1) & "yes".equals(input.toLowerCase()) ) {
+				}else if (XpathAgain.equals(1) & "yes".equals(input.toLowerCase()) ) {
 					XpathFunction = 1;
+					XpathAgain = 0;
 					
-				}else if (XpathSelAttribute.equals(1) & "no".equals(input.toLowerCase()) ) {
+				}else if (XpathAgain.equals(1) & "no".equals(input.toLowerCase()) ) {
 					XpathFunction = 0;
+					XpathAgain = 0;
 					
 				}else if (XpathSelAttribute.equals(1)) {
 					Xpath XML = new Xpath();
